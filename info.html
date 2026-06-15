@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info Unit & Game - GameZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🎮 GameZone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="info.html">Info Unit & Game</a></li>
+          <li class="nav-item"><a class="nav-link" href="harga.html">Harga</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION INFO UNIT & GAME -->
+  <section id="info" class="py-5">
+    <div class="container">
+
+      <p class="judul-section">Info Unit & Game</p>
+      <div class="garis-bawah"></div>
+
+      <!-- Radio tab — harus jadi sibling langsung dengan tab-bar & konten -->
+      <input type="radio" name="tab" id="tab-unit" class="tab-radio" checked />
+      <input type="radio" name="tab" id="tab-game" class="tab-radio" />
+
+      <div class="tab-bar">
+        <label for="tab-unit" class="tab-label label-unit">🎮 Info Unit</label>
+        <label for="tab-game" class="tab-label label-game">🕹️ Info Game</label>
+      </div>
+
+      <!-- KONTEN TAB: INFO UNIT -->
+      <div class="tab-konten konten-unit">
+        <div class="row g-4 justify-content-center">
+
+          <div class="col-md-4">
+            <div class="kartu-konsol">
+              <div class="ikon">🎮</div>
+              <h5>PlayStation 4</h5>
+              <p class="text-secondary mb-0">5 unit tersedia · 2 stik/unit</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="kartu-konsol">
+              <div class="ikon">🕹️</div>
+              <h5>PlayStation 5</h5>
+              <p class="text-secondary mb-0">8 unit tersedia · 2 stik/unit</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- KONTEN TAB: INFO GAME -->
+      <div class="tab-konten konten-game">
+
+        <input type="radio" name="filter" id="filter-semua"   class="filter-radio" checked />
+        <input type="radio" name="filter" id="filter-populer" class="filter-radio" />
+        <input type="radio" name="filter" id="filter-genre"   class="filter-radio" />
+
+        <div class="filter-bar">
+          <label for="filter-semua"   class="filter-label label-semua">Semua Game</label>
+          <label for="filter-populer" class="filter-label label-populer">⭐ Paling Populer</label>
+          <label for="filter-genre"   class="filter-label label-genre">🎯 Cari by Genre</label>
+        </div>
+
+        <!-- Filter: Semua -->
+        <div class="filter-konten semua">
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">#1 TERPOPULER</div>
+                <div class="nama-game">GTA V – Grand Theft Auto V</div>
+                <div class="genre">🎯 Action / Open World</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">#2 POPULER</div>
+                <div class="nama-game">EA Sports FC 24 (FIFA)</div>
+                <div class="genre">⚽ Sports / Olahraga</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">#3 POPULER</div>
+                <div class="nama-game">Mortal Kombat 1</div>
+                <div class="genre">🥊 Fighting / Pertarungan</div>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">TERSEDIA</div>
+                <div class="nama-game">God of War Ragnarok</div>
+                <div class="genre">⚔️ Action / Adventure</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">TERSEDIA</div>
+                <div class="nama-game">NBA 2K24</div>
+                <div class="genre">🏀 Sports / Basket</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">TERSEDIA</div>
+                <div class="nama-game">Spider-Man 2</div>
+                <div class="genre">🕷️ Action / Adventure</div>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Filter: Paling Populer -->
+        <div class="filter-konten populer">
+          <div class="row g-3">
+
+            <div class="col-md-4">
+              <div class="kartu-game">
+                <div class="nomor">🥇 #1 TERPOPULER</div>
+                <div class="nama-game">GTA V</div>
+                <div class="genre">🎯 Action / Open World</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="kartu-game">
+                <div class="nomor">🥈 #2 POPULER</div>
+                <div class="nama-game">EA Sports FC 24</div>
+                <div class="genre">⚽ Sports / Olahraga</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="kartu-game">
+                <div class="nomor">🥉 #3 POPULER</div>
+                <div class="nama-game">Mortal Kombat 1</div>
+                <div class="genre">🥊 Fighting / Pertarungan</div>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Filter: By Genre -->
+        <div class="filter-konten genre">
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">ACTION / OPEN WORLD</div>
+                <div class="nama-game">GTA V & God of War Ragnarok</div>
+                <div class="genre">🎯 Petualangan bebas & pertarungan epik</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">SPORTS / OLAHRAGA</div>
+                <div class="nama-game">EA Sports FC 24 & NBA 2K24</div>
+                <div class="genre">⚽🏀 Sepak bola & basket</div>
+                <span class="badge-ps badge-ps4">PS4</span>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">FIGHTING / PERTARUNGAN</div>
+                <div class="nama-game">Mortal Kombat 1</div>
+                <div class="genre">🥊 Adu jago 1 vs 1</div>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="kartu-game">
+                <div class="nomor">ACTION / ADVENTURE</div>
+                <div class="nama-game">Spider-Man 2</div>
+                <div class="genre">🕷️ Superhero open world</div>
+                <span class="badge-ps badge-ps5">PS5</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- akhir konten tab game -->
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 GameZone Rental PS · Jambi</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

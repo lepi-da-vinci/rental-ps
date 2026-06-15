@@ -1,0 +1,301 @@
+/* ===========================
+   WARNA UTAMA WEBSITE
+=========================== */
+:root {
+  --warna-utama: #1a1a2e;
+  --warna-aksen: #e94560;
+  --warna-kartu: #16213e;
+}
+
+/* ===========================
+   GAYA UMUM
+=========================== */
+body {
+  background-color: #0f0f0f;
+  color: #eeeeee;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar {
+  background-color: var(--warna-utama);
+  box-shadow: 0 2px 12px rgb(0, 0, 0);
+}
+
+.navbar-brand {
+  color: var(--warna-aksen) !important;
+  font-weight: bold;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease;
+}
+.navbar-brand {
+  border: none;
+  color: #ffffff;
+}
+.navbar-brand:hover { transform: scale(1.08); }
+
+.nav-link {
+  color: #eeeeee !important;
+  position: relative;
+  padding-bottom: 6px !important;
+  transition: color 0.25s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--warna-aksen);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover { color: var(--warna-aksen) !important; }
+.nav-link:hover::after { width: 100%; }
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+  background-color: var(--warna-utama);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h1 { font-size: 2.5rem; font-weight: bold; }
+.hero span { color: var(--warna-aksen); }
+.hero p { color: #aaaaaa; font-size: 1.1rem; }
+
+/* ===========================
+   TOMBOL
+=========================== */
+.btn-aksen {
+  background-color: var(--warna-aksen);
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-aksen:hover {
+  background-color: #c73652;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(233, 69, 96, 0.4);
+}
+
+/* ===========================
+   JUDUL SECTION
+=========================== */
+.judul-section {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.garis-bawah {
+  width: 50px;
+  height: 3px;
+  background-color: var(--warna-aksen);
+  margin: 0 auto 40px auto;
+}
+
+/* ===========================
+   KARTU KONSOL
+=========================== */
+.kartu-konsol {
+  background-color: var(--warna-kartu);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #2a2a4a;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu-konsol:hover {
+  transform: translateY(-5px);
+  border-color: var(--warna-aksen);
+  box-shadow: 0 8px 20px rgba(233, 69, 96, 0.15);
+}
+
+.kartu-konsol .ikon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.kartu-konsol:hover .ikon { transform: scale(1.2); }
+
+/* ===========================
+   SISTEM TAB (Info Unit / Game)
+=========================== */
+.tab-radio { display: none; }
+
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tab-label {
+  padding: 8px 22px;
+  border-radius: 6px;
+  border: 1px solid #2a2a4a;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #aaa;
+  background-color: var(--warna-kartu);
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.tab-label:hover {
+  border-color: var(--warna-aksen);
+  color: white;
+}
+
+.tab-konten { display: none; }
+
+#tab-unit:checked ~ .tab-bar .label-unit {
+  background-color: var(--warna-aksen);
+  color: white;
+  border-color: var(--warna-aksen);
+}
+#tab-unit:checked ~ .konten-unit { display: block; }
+
+#tab-game:checked ~ .tab-bar .label-game {
+  background-color: var(--warna-aksen);
+  color: white;
+  border-color: var(--warna-aksen);
+}
+#tab-game:checked ~ .konten-game { display: block; }
+
+/* ===========================
+   SISTEM FILTER GAME
+=========================== */
+.filter-radio { display: none; }
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: 1px solid #2a2a4a;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #aaa;
+  background-color: var(--warna-kartu);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-label:hover {
+  border-color: var(--warna-aksen);
+  color: white;
+}
+
+.filter-konten { display: none; }
+
+#filter-semua:checked   ~ .filter-bar .label-semua   { background-color: var(--warna-aksen); color: white; border-color: var(--warna-aksen); }
+#filter-populer:checked ~ .filter-bar .label-populer { background-color: var(--warna-aksen); color: white; border-color: var(--warna-aksen); }
+#filter-genre:checked   ~ .filter-bar .label-genre   { background-color: var(--warna-aksen); color: white; border-color: var(--warna-aksen); }
+
+#filter-semua:checked   ~ .filter-konten.semua   { display: block; }
+#filter-populer:checked ~ .filter-konten.populer { display: block; }
+#filter-genre:checked   ~ .filter-konten.genre   { display: block; }
+
+/* ===========================
+   KARTU GAME
+=========================== */
+.kartu-game {
+  background-color: var(--warna-kartu);
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu-game:hover {
+  transform: translateY(-4px);
+  border-color: var(--warna-aksen);
+  box-shadow: 0 8px 20px rgba(233, 69, 96, 0.15);
+}
+
+.kartu-game .nomor {
+  font-size: 0.7rem;
+  color: var(--warna-aksen);
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.kartu-game .nama-game {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.kartu-game .genre {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.badge-ps {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.badge-ps4 { background-color: #003087; color: white; }
+.badge-ps5 { background-color: #2d2d2d; color: white; border: 1px solid #555; }
+
+.label-kolom {
+  font-size: 0.72rem;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* ===========================
+   KARTU PAKET
+=========================== */
+.kartu-paket {
+  background-color: var(--warna-kartu);
+  border: 1px solid #2a2a4a;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu-paket:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(233, 69, 96, 0.2);
+}
+
+.kartu-paket h5 { color: var(--warna-aksen); font-weight: bold; }
+.kartu-paket .harga { font-size: 1.8rem; font-weight: bold; }
+.kartu-paket ul { list-style: none; padding: 0; color: #aaaaaa; }
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background-color: var(--warna-utama);
+  color: #aaaaaa;
+  text-align: center;
+  padding: 20px 0;
+}
