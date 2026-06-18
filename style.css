@@ -14,6 +14,15 @@ body {
   background-color: #0f0f0f;
   color: #eeeeee;
   font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* ===========================
+   PENGATURAN SECTION UMUM
+=========================== */
+section {
+  flex: 1;
 }
 
 /* ===========================
@@ -60,15 +69,42 @@ body {
    HERO
 =========================== */
 .hero {
-  background-color: var(--warna-utama);
-  padding: 80px 0;
+  /* Mengubah background solid menjadi gradient agar lebih elegan */
+  background: radial-gradient(circle at center, #23233b 0%, var(--warna-utama) 100%);
+  
+  /* Flex: 1 akan memaksa section ini mengisi sisa ruang kosong layar */
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
   text-align: center;
+  padding: 80px 20px;
+  
+  /* Opsional: Tambahan garis bawah & shadow agar section hero lebih menonjol */
+  border-bottom: 1px solid rgba(233, 69, 96, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.hero h1 { font-size: 2.5rem; font-weight: bold; }
-.hero span { color: var(--warna-aksen); }
-.hero p { color: #aaaaaa; font-size: 1.1rem; }
+.hero h1 { 
+  font-size: 3.5rem; /* Ukuran diperbesar agar lebih impact */
+  font-weight: 800; 
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+}
 
+.hero span { 
+  color: var(--warna-aksen); 
+}
+
+.hero p { 
+  color: #cccccc; 
+  font-size: 1.25rem; 
+  margin-bottom: 30px;
+  font-weight: 300;
+}
 /* ===========================
    TOMBOL
 =========================== */
@@ -138,16 +174,16 @@ body {
 
 .tab-bar {
   display: flex;
-  gap: 8px;
-  margin-bottom: 24px;
+  justify-content: space-between; /* Kode ini yang akan mendorong tombol ke ujung kiri dan kanan */
+  margin-bottom: 50px; 
 }
 
 .tab-label {
-  padding: 8px 22px;
+  padding: 15px 28px;       /* Diperbesar (sebelumnya 8px 22px) agar tombol lebih tebal dan lebar */
   border-radius: 6px;
   border: 1px solid #2a2a4a;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.05rem;       /* Diperbesar (sebelumnya 0.9rem) agar tulisan lebih jelas */
   color: #aaa;
   background-color: var(--warna-kartu);
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
