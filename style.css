@@ -258,6 +258,12 @@ section {
   padding: 14px 18px;
   margin-bottom: 12px;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  
+  /* Tambahan untuk memisahkan teks dan gambar */
+  display: flex;
+  justify-content: space-between; /* Mendorong teks ke kiri dan gambar ke kanan */
+  align-items: center; /* Membuat posisinya sejajar di tengah secara vertikal */
+  gap: 15px; /* Jarak antara teks dan gambar */
 }
 
 .kartu-game:hover {
@@ -266,43 +272,18 @@ section {
   box-shadow: 0 8px 20px rgba(233, 69, 96, 0.15);
 }
 
-.kartu-game .nomor {
-  font-size: 0.7rem;
-  color: var(--warna-aksen);
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 4px;
+/* Bagian pembungkus teks agar tidak bertabrakan dengan gambar */
+.info-teks {
+  flex: 1; 
 }
 
-.kartu-game .nama-game {
-  font-weight: bold;
-  font-size: 0.95rem;
-  margin-bottom: 4px;
-}
-
-.kartu-game .genre {
-  font-size: 0.8rem;
-  color: #888;
-  margin-bottom: 8px;
-}
-
-.badge-ps {
-  font-size: 0.7rem;
-  font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 4px;
-  margin-right: 4px;
-}
-
-.badge-ps4 { background-color: #003087; color: white; }
-.badge-ps5 { background-color: #2d2d2d; color: white; border: 1px solid #555; }
-
-.label-kolom {
-  font-size: 0.72rem;
-  color: #888;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+/* Style untuk gambar gamenya */
+.gambar-game {
+  width: 75px;        /* Lebar gambar */
+  height: 75px;       /* Tinggi gambar (buat persegi agar rapi) */
+  object-fit: cover;  /* Memastikan gambar tidak gepeng/distorsi */
+  border-radius: 8px; /* Sudut gambar agak membulat */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 /* ===========================
