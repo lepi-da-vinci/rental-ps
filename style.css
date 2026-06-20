@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 /* ===========================
    PENGATURAN SECTION UMUM
 =========================== */
@@ -39,11 +40,15 @@ section {
   font-size: 1.4rem;
   transition: transform 0.2s ease;
 }
+
 .navbar-brand {
   border: none;
   color: #ffffff;
 }
-.navbar-brand:hover { transform: scale(1.08); }
+
+.navbar-brand:hover {
+  transform: scale(1.08);
+}
 
 .nav-link {
   color: #eeeeee !important;
@@ -55,15 +60,21 @@ section {
 .nav-link::after {
   content: '';
   position: absolute;
-  left: 0; bottom: 0;
+  left: 0;
+  bottom: 0;
   width: 0%;
   height: 2px;
   background-color: var(--warna-aksen);
   transition: width 0.3s ease;
 }
 
-.nav-link:hover { color: var(--warna-aksen) !important; }
-.nav-link:hover::after { width: 100%; }
+.nav-link:hover {
+  color: var(--warna-aksen) !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
 
 /* ===========================
    HERO
@@ -71,40 +82,42 @@ section {
 .hero {
   /* Mengubah background solid menjadi gradient agar lebih elegan */
   background: radial-gradient(circle at center, #23233b 0%, var(--warna-utama) 100%);
-  
+
   /* Flex: 1 akan memaksa section ini mengisi sisa ruang kosong layar */
-  flex: 1; 
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   text-align: center;
   padding: 80px 20px;
-  
+
   /* Opsional: Tambahan garis bawah & shadow agar section hero lebih menonjol */
   border-bottom: 1px solid rgba(233, 69, 96, 0.2);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.hero h1 { 
-  font-size: 3.5rem; /* Ukuran diperbesar agar lebih impact */
-  font-weight: 800; 
+.hero h1 {
+  font-size: 3.5rem;
+  /* Ukuran diperbesar agar lebih impact */
+  font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
 
-.hero span { 
-  color: var(--warna-aksen); 
+.hero span {
+  color: var(--warna-aksen);
 }
 
-.hero p { 
-  color: #cccccc; 
-  font-size: 1.25rem; 
+.hero p {
+  color: #cccccc;
+  font-size: 1.25rem;
   margin-bottom: 30px;
   font-weight: 300;
 }
+
 /* ===========================
    TOMBOL
 =========================== */
@@ -165,25 +178,32 @@ section {
   transition: transform 0.3s ease;
 }
 
-.kartu-konsol:hover .ikon { transform: scale(1.2); }
+.kartu-konsol:hover .ikon {
+  transform: scale(1.2);
+}
 
 /* ===========================
    SISTEM TAB (Info Unit / Game)
 =========================== */
-.tab-radio { display: none; }
+.tab-radio {
+  display: none;
+}
 
 .tab-bar {
   display: flex;
-  justify-content: space-between; /* Kode ini yang akan mendorong tombol ke ujung kiri dan kanan */
-  margin-bottom: 50px; 
+  justify-content: space-between;
+  /* Kode ini yang akan mendorong tombol ke ujung kiri dan kanan */
+  margin-bottom: 50px;
 }
 
 .tab-label {
-  padding: 15px 28px;       /* Diperbesar (sebelumnya 8px 22px) agar tombol lebih tebal dan lebar */
+  padding: 15px 28px;
+  /* Diperbesar (sebelumnya 8px 22px) agar tombol lebih tebal dan lebar */
   border-radius: 6px;
   border: 1px solid #2a2a4a;
   cursor: pointer;
-  font-size: 1.05rem;       /* Diperbesar (sebelumnya 0.9rem) agar tulisan lebih jelas */
+  font-size: 1.05rem;
+  /* Diperbesar (sebelumnya 0.9rem) agar tulisan lebih jelas */
   color: #aaa;
   background-color: var(--warna-kartu);
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
@@ -194,26 +214,36 @@ section {
   color: white;
 }
 
-.tab-konten { display: none; }
+.tab-konten {
+  display: none;
+}
 
-#tab-unit:checked ~ .tab-bar .label-unit {
+#tab-unit:checked~.tab-bar .label-unit {
   background-color: var(--warna-aksen);
   color: white;
   border-color: var(--warna-aksen);
 }
-#tab-unit:checked ~ .konten-unit { display: block; }
 
-#tab-game:checked ~ .tab-bar .label-game {
+#tab-unit:checked~.konten-unit {
+  display: block;
+}
+
+#tab-game:checked~.tab-bar .label-game {
   background-color: var(--warna-aksen);
   color: white;
   border-color: var(--warna-aksen);
 }
-#tab-game:checked ~ .konten-game { display: block; }
+
+#tab-game:checked~.konten-game {
+  display: block;
+}
 
 /* ===========================
    SISTEM FILTER GAME
 =========================== */
-.filter-radio { display: none; }
+.filter-radio {
+  display: none;
+}
 
 .filter-bar {
   display: flex;
@@ -238,15 +268,39 @@ section {
   color: white;
 }
 
-.filter-konten { display: none; }
+.filter-konten {
+  display: none;
+}
 
-#filter-semua:checked   ~ .filter-bar .label-semua   { background-color: var(--warna-aksen); color: white; border-color: var(--warna-aksen); }
-#filter-populer:checked ~ .filter-bar .label-populer { background-color: var(--warna-aksen); color: white; border-color: var(--warna-aksen); }
-#filter-genre:checked   ~ .filter-bar .label-genre   { background-color: var(--warna-aksen); color: white; border-color: var(--warna-aksen); }
+#filter-semua:checked~.filter-bar .label-semua {
+  background-color: var(--warna-aksen);
+  color: white;
+  border-color: var(--warna-aksen);
+}
 
-#filter-semua:checked   ~ .filter-konten.semua   { display: block; }
-#filter-populer:checked ~ .filter-konten.populer { display: block; }
-#filter-genre:checked   ~ .filter-konten.genre   { display: block; }
+#filter-populer:checked~.filter-bar .label-populer {
+  background-color: var(--warna-aksen);
+  color: white;
+  border-color: var(--warna-aksen);
+}
+
+#filter-genre:checked~.filter-bar .label-genre {
+  background-color: var(--warna-aksen);
+  color: white;
+  border-color: var(--warna-aksen);
+}
+
+#filter-semua:checked~.filter-konten.semua {
+  display: block;
+}
+
+#filter-populer:checked~.filter-konten.populer {
+  display: block;
+}
+
+#filter-genre:checked~.filter-konten.genre {
+  display: block;
+}
 
 /* ===========================
    KARTU GAME
@@ -294,8 +348,16 @@ section {
   margin-right: 4px;
 }
 
-.badge-ps4 { background-color: #003087; color: white; }
-.badge-ps5 { background-color: #2d2d2d; color: white; border: 1px solid #555; }
+.badge-ps4 {
+  background-color: #003087;
+  color: white;
+}
+
+.badge-ps5 {
+  background-color: #2d2d2d;
+  color: white;
+  border: 1px solid #555;
+}
 
 .label-kolom {
   font-size: 0.72rem;
@@ -322,9 +384,21 @@ section {
   box-shadow: 0 10px 24px rgba(233, 69, 96, 0.2);
 }
 
-.kartu-paket h5 { color: var(--warna-aksen); font-weight: bold; }
-.kartu-paket .harga { font-size: 1.8rem; font-weight: bold; }
-.kartu-paket ul { list-style: none; padding: 0; color: #aaaaaa; }
+.kartu-paket h5 {
+  color: var(--warna-aksen);
+  font-weight: bold;
+}
+
+.kartu-paket .harga {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.kartu-paket ul {
+  list-style: none;
+  padding: 0;
+  color: #aaaaaa;
+}
 
 /* ===========================
    FOOTER
@@ -334,4 +408,126 @@ footer {
   color: #aaaaaa;
   text-align: center;
   padding: 20px 0;
+}
+
+/* ===========================
+   STATISTIK HOME
+=========================== */
+
+.stat-box {
+  background: var(--warna-kartu);
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 30px;
+  transition: .3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  border-color: var(--warna-aksen);
+}
+
+.stat-box h2 {
+  color: var(--warna-aksen);
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.stat-box p {
+  color: #bbbbbb;
+  margin: 0;
+}
+
+
+/* ===========================
+   KARTU HOME
+=========================== */
+
+.kartu-home {
+
+  background: var(--warna-kartu);
+
+  border: 1px solid #2a2a4a;
+
+  border-radius: 10px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  height: 100%;
+
+  transition: .3s;
+
+}
+
+.kartu-home:hover {
+
+  transform: translateY(-6px);
+
+  border-color: var(--warna-aksen);
+
+  box-shadow: 0 10px 20px rgba(233, 69, 96, .18);
+
+}
+
+.icon-home {
+
+  font-size: 3rem;
+
+  margin-bottom: 15px;
+
+}
+
+.kartu-home h5 {
+
+  color: var(--warna-aksen);
+
+  margin-bottom: 15px;
+
+  font-weight: bold;
+
+}
+
+.kartu-home p {
+
+  color: #bbbbbb;
+
+  margin-bottom: 0;
+
+}
+
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta-box {
+
+  background: linear-gradient(135deg, #16213e, #1a1a2e);
+
+  border: 1px solid rgba(233, 69, 96, .3);
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  padding: 50px 20px;
+
+}
+
+.cta-box h2 {
+
+  font-weight: bold;
+
+  margin-bottom: 15px;
+
+}
+
+.cta-box p {
+
+  color: #cccccc;
+
+  margin-bottom: 25px;
+
 }
