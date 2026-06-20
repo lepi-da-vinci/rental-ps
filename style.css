@@ -497,57 +497,35 @@ footer {
 =========================== */
 
 .kartu-home {
-
   background: var(--warna-kartu);
-
   border: 1px solid #2a2a4a;
-
   border-radius: 10px;
-
   padding: 30px;
-
   text-align: center;
-
   height: 100%;
-
   transition: .3s;
-
 }
 
 .kartu-home:hover {
-
   transform: translateY(-6px);
-
   border-color: var(--warna-aksen);
-
   box-shadow: 0 10px 20px rgba(233, 69, 96, .18);
-
 }
 
 .icon-home {
-
   font-size: 3rem;
-
   margin-bottom: 15px;
-
 }
 
 .kartu-home h5 {
-
   color: var(--warna-aksen);
-
   margin-bottom: 15px;
-
   font-weight: bold;
-
 }
 
 .kartu-home p {
-
   color: #bbbbbb;
-
   margin-bottom: 0;
-
 }
 
 
@@ -556,31 +534,19 @@ footer {
 =========================== */
 
 .cta-box {
-
   background: linear-gradient(135deg, #16213e, #1a1a2e);
-
   border: 1px solid rgba(233, 69, 96, .3);
-
   border-radius: 15px;
-
   text-align: center;
-
   padding: 50px 20px;
-
 }
 
 .cta-box h2 {
-
   font-weight: bold;
-
   margin-bottom: 15px;
-
 }
 
 .cta-box p {
-
   color: #cccccc;
-
   margin-bottom: 25px;
-
 }
