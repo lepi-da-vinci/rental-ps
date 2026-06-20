@@ -330,7 +330,7 @@ SISTEM FILTER GAME
 .info-teks {
   flex: 1; 
 }
- HEAD
+
 /* Style untuk gambar gamenya */
 .gambar-game {
   width: 75px;        /* Lebar gambar */
@@ -338,45 +338,6 @@ SISTEM FILTER GAME
   object-fit: cover;  /* Memastikan gambar tidak gepeng/distorsi */
   border-radius: 8px; /* Sudut gambar agak membulat */
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-
-.kartu-game .nama-game {
-  font-weight: bold;
-  font-size: 0.95rem;
-  margin-bottom: 4px;
-}
-
-.kartu-game .genre {
-  font-size: 0.8rem;
-  color: #888;
-  margin-bottom: 8px;
-}
-
-.badge-ps {
-  font-size: 0.7rem;
-  font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 4px;
-  margin-right: 4px;
-}
-
-.badge-ps4 {
-  background-color: #003087;
-  color: white;
-}
-
-.badge-ps5 {
-  background-color: #2d2d2d;
-  color: white;
-  border: 1px solid #555;
-}
-
-.label-kolom {
-  font-size: 0.72rem;
-  color: #888;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
 }
 
 /* ===========================
