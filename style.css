@@ -2,9 +2,9 @@
    WARNA UTAMA WEBSITE
 =========================== */
 :root {
-  --warna-utama: #1a1a2e;
-  --warna-aksen: #e94560;
-  --warna-kartu: #16213e;
+  --warna-utama: #101414;
+  --warna-aksen: #00e676;
+  --warna-kartu: #1a2424;
 }
 
 /* ===========================
@@ -13,7 +13,7 @@
 body {
   background-color: #0f0f0f;
   color: #eeeeee;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'poppins', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -42,6 +42,8 @@ section {
 }
 
 .navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
   border: none;
   color: #ffffff;
 }
@@ -80,7 +82,7 @@ section {
    HERO
 =========================== */
 .hero {
-  background: radial-gradient(circle at center, #23233b 0%, var(--warna-utama) 100%);
+  background: radial-gradient(circle at center,#1d3b32 0%,var(--warna-utama) 100%);
 
   flex: 1;
   display: flex;
@@ -96,6 +98,7 @@ section {
 }
 
 .hero h1 {
+  font-family: 'Orbitron', sans-serif;
   font-size: 3.5rem;
   font-weight: 800;
   letter-spacing: 1px;
@@ -127,7 +130,7 @@ section {
 }
 
 .btn-aksen:hover {
-  background-color: #c73652;
+  background-color: #00c853;
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(233, 69, 96, 0.4);
@@ -137,6 +140,8 @@ section {
    JUDUL SECTION
 =========================== */
 .judul-section {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
@@ -176,6 +181,13 @@ section {
 
 .kartu-konsol:hover .ikon {
   transform: scale(1.2);
+}
+
+.kartu-konsol h5 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--warna-aksen);
+    font-weight: 700;
+    margin-top: 10px;
 }
 
 /* ===========================
@@ -374,6 +386,7 @@ SISTEM FILTER GAME
 }
 
 .kartu-genre .judul-genre {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
   color: #fff;
@@ -432,6 +445,7 @@ SISTEM FILTER GAME
 }
 
 .kartu-paket h5 {
+  font-family: 'Orbitron', sans-serif;
   color: var(--warna-aksen);
   font-weight: bold;
 }
@@ -475,6 +489,7 @@ footer {
 }
 
 .stat-box h2 {
+  font-family: 'Orbitron', sans-serif;
   color: var(--warna-aksen);
   font-size: 2.7rem;
   font-weight: bold;
@@ -512,6 +527,7 @@ footer {
 }
 
 .kartu-home h5 {
+  font-family: 'Orbitron', sans-serif;
   color: var(--warna-aksen);
   margin-bottom: 15px;
   font-weight: bold;
@@ -536,6 +552,7 @@ footer {
 }
 
 .cta-box h2 {
+  font-family: 'Orbitron', sans-serif;
   font-weight: bold;
   margin-bottom: 15px;
 }
