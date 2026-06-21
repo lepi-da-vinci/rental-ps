@@ -3,7 +3,7 @@
 =========================== */
 :root {
   --warna-utama: #101414;
-  --warna-aksen: #00e676;
+  --warna-aksen: #b344df;
   --warna-kartu: #1a2424;
 }
 
@@ -130,7 +130,7 @@ section {
 }
 
 .btn-aksen:hover {
-  background-color: #00c853;
+  background-color: #72009f;
   color: white;
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(233, 69, 96, 0.4);
@@ -188,6 +188,22 @@ section {
     color: var(--warna-aksen);
     font-weight: 700;
     margin-top: 10px;
+}
+
+/* ===========================
+   KHUSUS TINGGI KARTU INFO UNIT
+=========================== */
+.konten-unit .kartu-konsol {
+  min-height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.konten-unit .kartu-konsol .ikon {
+  font-size: 4rem;
+  margin-bottom: 15px;
 }
 
 /* ===========================
@@ -339,8 +355,8 @@ SISTEM FILTER GAME
 /* Style untuk gambar di dalam kartu game */
 .gambar-game {
   width: 75px;        /* Lebar gambar */
-  height: 75px;       /* Tinggi gambar (buat persegi agar rapi) */
-  object-fit: cover;  /* Memastikan gambar tidak gepeng/distorsi */
+  height: 75px;       /* Tinggi gambar  */
+  object-fit: cover;  /* Memastikan gambar tidak gepeng */
   border-radius: 8px; /* Sudut gambar agak membulat */
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
@@ -366,7 +382,7 @@ SISTEM FILTER GAME
 .kartu-genre:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 20px rgba(233, 69, 96, 0.15);
-  border-left-color: #ff4d6d;
+  border-left-color: #72009f;
 }
 
 /* Ikon besar transparan di latar belakang */
