@@ -80,10 +80,8 @@ section {
    HERO
 =========================== */
 .hero {
-  /* Mengubah background solid menjadi gradient agar lebih elegan */
   background: radial-gradient(circle at center, #23233b 0%, var(--warna-utama) 100%);
 
-  /* Flex: 1 akan memaksa section ini mengisi sisa ruang kosong layar */
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -93,14 +91,12 @@ section {
   text-align: center;
   padding: 80px 20px;
 
-  /* Opsional: Tambahan garis bawah & shadow agar section hero lebih menonjol */
   border-bottom: 1px solid rgba(233, 69, 96, 0.2);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
   font-size: 3.5rem;
-  /* Ukuran diperbesar agar lebih impact */
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -192,18 +188,15 @@ SISTEM TAB (Info Unit / Game)
 .tab-bar {
   display: flex;
   justify-content: space-between;
-  /* Kode ini yang akan mendorong tombol ke ujung kiri dan kanan */
   margin-bottom: 50px;
 }
 
 .tab-label {
   padding: 15px 28px;
-  /* Diperbesar (sebelumnya 8px 22px) agar tombol lebih tebal dan lebar */
   border-radius: 6px;
   border: 1px solid #2a2a4a;
   cursor: pointer;
   font-size: 1.05rem;
-  /* Diperbesar (sebelumnya 0.9rem) agar tulisan lebih jelas */
   color: #aaa;
   background-color: var(--warna-kartu);
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
@@ -331,7 +324,7 @@ SISTEM FILTER GAME
   flex: 1; 
 }
 
-/* Style untuk gambar gamenya */
+/* Style untuk gambar di dalam kartu game */
 .gambar-game {
   width: 75px;        /* Lebar gambar */
   height: 75px;       /* Tinggi gambar (buat persegi agar rapi) */
@@ -365,18 +358,19 @@ SISTEM FILTER GAME
 }
 
 /* Ikon besar transparan di latar belakang */
-.kartu-genre .ikon-bg {
+.kartu-genre .ikon-bg i {
   position: absolute;
-  right: -10px;
-  bottom: -20px;
-  font-size: 6rem;
-  opacity: 0.05; /* Dibuat sangat transparan */
+  right: 10px;
+  bottom: -10px;
+  font-size: 5rem; /* Ukuran icon disesuaikan */
+  opacity: 0.05;
   z-index: 0;
   transition: transform 0.3s ease;
 }
 
-.kartu-genre:hover .ikon-bg {
+.kartu-genre:hover .ikon-bg i {
   transform: scale(1.1) rotate(-10deg);
+  opacity: 0.08; /* Sedikit lebih menyala saat di-hover */
 }
 
 .kartu-genre .judul-genre {
@@ -499,27 +493,18 @@ footer {
 .kartu-home {
 
   background: var(--warna-kartu);
-
   border: 1px solid #2a2a4a;
-
   border-radius: 10px;
-
   padding: 30px;
-
   text-align: center;
-
   height: 100%;
-
   transition: .3s;
-
 }
 
 .kartu-home:hover {
 
   transform: translateY(-6px);
-
   border-color: var(--warna-aksen);
-
   box-shadow: 0 10px 20px rgba(233, 69, 96, .18);
 
 }
@@ -527,27 +512,20 @@ footer {
 .icon-home {
 
   font-size: 3rem;
-
   margin-bottom: 15px;
-
 }
 
 .kartu-home h5 {
 
   color: var(--warna-aksen);
-
   margin-bottom: 15px;
-
   font-weight: bold;
-
 }
 
 .kartu-home p {
 
   color: #bbbbbb;
-
   margin-bottom: 0;
-
 }
 
 
@@ -558,29 +536,20 @@ footer {
 .cta-box {
 
   background: linear-gradient(135deg, #16213e, #1a1a2e);
-
   border: 1px solid rgba(233, 69, 96, .3);
-
   border-radius: 15px;
-
   text-align: center;
-
   padding: 50px 20px;
-
 }
 
 .cta-box h2 {
 
   font-weight: bold;
-
   margin-bottom: 15px;
-
 }
 
 .cta-box p {
 
   color: #cccccc;
-
   margin-bottom: 25px;
-
 }
