@@ -32,6 +32,8 @@ section {
 .navbar {
   background-color: var(--warna-utama);
   box-shadow: 0 2px 12px rgb(0, 0, 0);
+  /* Tambahan agar navbar selalu tampil paling depan */
+  z-index: 999; 
 }
 
 .navbar-brand {
